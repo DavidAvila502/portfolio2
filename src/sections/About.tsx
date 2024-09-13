@@ -12,10 +12,7 @@ const About = () => {
    const [selecedSection, setSelectedSection] = useState<0 | 1>(0);
 
    return (
-      <div
-         id="about"
-         className="min-h-[100vh] border-t-[0.5px] border-strokeGray"
-      >
+      <div id="about" className="min-h-[100vh] pt-[40px]">
          {/* Title */}
          <p className="text-white text-[40px] font-K2D text-center mt-[20px]">
             Sobre mí
