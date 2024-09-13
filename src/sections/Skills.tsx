@@ -1,20 +1,25 @@
 import DownArrow from "../components/shared/DownArrow";
 import { skillsConstats } from "../config/constants/sskills_constants";
+import { motion } from "framer-motion";
+import { StaggerChild, StaggerVerticalUpAppears } from "../utils/variants";
 
 const Skills = () => {
    return (
-      <div
-         id="skills"
-         className="min-h-[90vh] border-t-[0.5px] border-strokeGray"
-      >
+      <div id="skills" className="min-h-[100vh] pt-[40px]">
          {/* Title */}
          <p className="text-white text-[40px] font-K2D text-center mt-[20px]">
             Habilidades
          </p>
 
-         <div className="mt-[20px] flex flex-row flex-wrap items-center justify-center gap-[50px] min-h-[60vh]">
+         <motion.div
+            variants={StaggerChild}
+            initial={"hide"}
+            whileInView={"show"}
+            className="mt-[20px] flex flex-row flex-wrap items-center justify-center gap-[50px] min-h-[60vh]"
+         >
             {skillsConstats.map((currentSkill, index) => (
-               <div
+               <motion.div
+                  variants={StaggerVerticalUpAppears}
                   key={index}
                   className="rounded-[20px] bg-baseGrayWithOpacity border-strokeGray border-[1px]
                   flex flex-col items-start justify-center w-[500px] h-[300px] pl-[40px] py-[50px]
@@ -33,12 +38,12 @@ const Skills = () => {
                   <p className="text-[#A1A1A1] text-[22px] font-K2D">
                      {currentSkill.description}
                   </p>
-               </div>
+               </motion.div>
             ))}
-         </div>
+         </motion.div>
 
          <div className="flex items-center justify-center">
-            <DownArrow navTo="#" />
+            <DownArrow navTo="#technologies" />
          </div>
       </div>
    );
