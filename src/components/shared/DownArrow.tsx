@@ -2,11 +2,11 @@ import { motion } from "framer-motion";
 import { verticalFloating } from "../../utils/variants";
 import downArrowIcon from "../../assets/downArrow.svg";
 
-interface downArrowProps {
+interface DownArrowProps {
    navTo: string;
 }
 
-const DownArrow = ({ navTo }: downArrowProps) => {
+const DownArrow = ({ navTo }: DownArrowProps) => {
    return (
       <a href={navTo}>
          <motion.div

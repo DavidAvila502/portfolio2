@@ -1,9 +1,9 @@
-interface socialIconProps {
+interface SocialIconProps {
    icon: string;
    alt: string;
 }
 
-const SocialIcon = ({ icon, alt }: socialIconProps) => {
+const SocialIcon = ({ icon, alt }: SocialIconProps) => {
    return (
       <div
          className="p-[10px] bg-[#1B1D21] border-strokeGray border-[1px] rounded-full cursor-pointer 
