@@ -57,3 +57,42 @@ export const StaggerVerticalUpAppears: Variants = {
       },
    },
 };
+
+export const technologyIconVariant: Variants = {
+   hidden: {
+      opacity: 0,
+      y: 20,
+      scale: 0,
+   },
+   show: {
+      opacity: 1,
+      y: 0,
+      scale: 1,
+      rotate: 360,
+      transition: {
+         type: "tween",
+         ease: "easeIn",
+         duration: 0.5,
+      },
+   },
+};
+
+export const technologyTitleVariant: Variants = {
+   hidden: {
+      opacity: 0,
+   },
+   show: {
+      opacity: 1,
+      transition: { type: "tween", ease: "easeIn", duration: 0.5 },
+   },
+};
+
+export const technologyListStagger: Variants = {
+   hidden: {
+      opacity: 0,
+   },
+   show: (i = 1) => ({
+      opacity: 1,
+      transition: { staggerChildren: 0.1, delayChildren: i * 0.1 },
+   }),
+};

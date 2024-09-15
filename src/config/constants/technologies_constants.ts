@@ -1,6 +1,14 @@
 import reactIcon from "../../assets/react.svg";
 import flutterIcon from "../../assets/flutter.svg";
 import expressIcon from "../../assets/express.svg";
+import javascriptIcon from "../../assets/javascript.svg";
+import typescriptIcon from "../../assets/typescript.svg";
+import htmlIcon from "../../assets/html.svg";
+import cssIcon from "../../assets/css.svg";
+import gitIcon from "../../assets/git.svg";
+import strapiIcon from "../../assets/strapi-logo.png";
+import pythonIcon from "../../assets/pytnon.svg";
+import flaskIcon from "../../assets/Flask.svg";
 
 export enum technologyType {
    main,
@@ -33,5 +41,58 @@ export const TechnologiesConstants: Array<ITechnology> = [
       description: "Framework para desarrollar aplicaciones moviles",
       icon: flutterIcon,
       type: technologyType.main,
+   },
+   {
+      title: "Git",
+      description: "Control de versiones",
+      icon: gitIcon,
+      type: technologyType.secondary,
+   },
+   {
+      title: "Javascript",
+      description: "Lenguaje de programación para la web",
+      icon: javascriptIcon,
+      type: technologyType.secondary,
+   },
+
+   {
+      title: "Css",
+      description: "Lenguaje de estilos en cascada",
+      icon: cssIcon,
+      type: technologyType.secondary,
+   },
+
+   {
+      title: "Typescript",
+      description: "Superconjunto de javascript",
+      icon: typescriptIcon,
+      type: technologyType.secondary,
+   },
+
+   {
+      title: "Html",
+      description: "Lenguaje de marcado",
+      icon: htmlIcon,
+      type: technologyType.secondary,
+   },
+
+   {
+      title: "Python",
+      description: "Lenguaje de programación interpretado de alto nivel",
+      icon: pythonIcon,
+      type: technologyType.secondary,
+   },
+
+   {
+      title: "Flask",
+      description: "Micro-Framework back-end para python",
+      icon: flaskIcon,
+      type: technologyType.secondary,
+   },
+   {
+      title: "Srapi",
+      description: "CMS back-end para node js",
+      icon: strapiIcon,
+      type: technologyType.secondary,
    },
 ];

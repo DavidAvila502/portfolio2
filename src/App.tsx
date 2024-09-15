@@ -2,6 +2,7 @@ import Navbar from "./components/shared/Navbar";
 import About from "./sections/About";
 import Banner from "./sections/Banner";
 import Skills from "./sections/Skills";
+import Technologies from "./sections/Technologies";
 
 const App = () => {
    return (
@@ -10,6 +11,7 @@ const App = () => {
          <Banner />
          <About />
          <Skills />
+         <Technologies />
       </>
    );
 };
