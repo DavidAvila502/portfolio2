@@ -7,6 +7,7 @@ import {
 import TechnologList from "../components/technologies/TechnologiesList";
 import { motion } from "framer-motion";
 import { technologyListStagger } from "../utils/variants";
+import DownArrow from "../components/shared/DownArrow";
 
 const Technologies = () => {
    const [currentTechnologyType, setCurrentTechnologyType] =
@@ -41,6 +42,10 @@ const Technologies = () => {
                currentTechnologyType={currentTechnologyType}
             />
          </motion.div>
+
+         <div className="flex items-center justify-center">
+            <DownArrow navTo="#projects" />
+         </div>
       </div>
    );
 };

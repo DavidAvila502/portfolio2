@@ -23,9 +23,7 @@ const Skills = () => {
                   key={index}
                   className="rounded-[20px] bg-baseGrayWithOpacity border-strokeGray border-[1px]
                   flex flex-col items-start justify-center w-[500px] h-[300px] pl-[40px] py-[50px]
-                  gap-[20px] hover:shadow-blueShadow transition-all duration-[400ms] cursor-pointer  hover:scale-[1.01]
-                  
-                  "
+                  gap-[20px] hover:shadow-blueShadow transition-all duration-[400ms] cursor-pointer"
                >
                   <div className="bg-baseBlue p-[15px] rounded-[10px]">
                      <img src={currentSkill.icon} alt="skill.svg" height={40} />

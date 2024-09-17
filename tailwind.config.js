@@ -9,6 +9,7 @@ export default {
             softGray: "#ECECEC",
             baseBlue: "#2367FC",
             baseGrayWithOpacity: "rgba(217,217,217, 0.1)",
+            baseBlueWithOpacity: "rgba(35,103,253,0.5)",
          },
          boxShadow: {
             whiteShadow: "0 0 15px 5px rgba(255,255,255,0.7)",

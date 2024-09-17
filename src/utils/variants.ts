@@ -96,3 +96,17 @@ export const technologyListStagger: Variants = {
       transition: { staggerChildren: 0.1, delayChildren: i * 0.1 },
    }),
 };
+
+export const scaleVariants: Variants = {
+   hidden: {
+      scale: 0,
+   },
+   show: {
+      scale: 1,
+      transition: {
+         type: "spring",
+         stiffness: 260,
+         damping: 20,
+      },
+   },
+};

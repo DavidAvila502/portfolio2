@@ -1,6 +1,7 @@
 import Navbar from "./components/shared/Navbar";
 import About from "./sections/About";
 import Banner from "./sections/Banner";
+import Projects from "./sections/Projects";
 import Skills from "./sections/Skills";
 import Technologies from "./sections/Technologies";
 
@@ -12,6 +13,7 @@ const App = () => {
          <About />
          <Skills />
          <Technologies />
+         <Projects />
       </>
    );
 };
