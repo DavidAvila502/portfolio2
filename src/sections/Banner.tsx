@@ -12,6 +12,7 @@ import {
    verticalUpAppears,
 } from "../utils/variants";
 import DownArrow from "../components/shared/DownArrow";
+import all_is_fine_image from "../assets/all_is_fine.png";
 
 const Banner = () => {
    const [isContactButtonHovered, setIsContactButtonHovered] =
@@ -23,6 +24,7 @@ const Banner = () => {
             className={`absolute inset-0 bg-cover bg-center opacity-[0.2]`}
             style={{ backgroundImage: `url(${backgroundImage})` }}
          ></div>
+
          <motion.div
             id="Banner"
             initial={"hide"}
@@ -30,6 +32,14 @@ const Banner = () => {
             variants={verticalUpAppears}
             className="relative min-h-[100vh] my-0 mx-auto max-w-[1280px] flex flex-col items-center justify-center gap-[15px]"
          >
+            {/* Image */}
+            <div
+               className="rounded-full w-[150px] h-[150px] bg-green-300 bg-cover bg-center
+               border-[2px] border-white
+               "
+               style={{ backgroundImage: `url(${all_is_fine_image})` }}
+            ></div>
+
             {/* NOMBRE */}
             <p className="text-white font-K2D text-[64px]">
                ¡Hola!, soy David{" "}
@@ -63,20 +73,20 @@ const Banner = () => {
 
             {/* Buttons */}
             <div className=" flex flex-row gap-[80px] mt-[20px]">
-               <div
+               <a
+                  href="#projects"
                   className="py-[8px] px-[30px] bg-baseBlue
-            rounded-[10px] cursor-pointer
-             hover:shadow-whiteShadow transition-all inline-block
-            "
+                  rounded-[10px] cursor-pointer
+                  hover:shadow-whiteShadow transition-all inline-block"
                >
                   <p className="text-white text-[22px]">Proyectos</p>
-               </div>
+               </a>
 
-               <motion.div
+               <motion.a
+                  href="#contact"
                   onMouseEnter={() => setIsContactButtonHovered(true)}
                   className="py-[8px] px-[30px] rounded-[10px] cursor-pointer 
-                flex flex-row gap-[12px] items-center justify-center
-            "
+                        flex flex-row gap-[12px] items-center justify-center"
                >
                   <p className="text-white text-[22px]">Contacto</p>
                   <motion.img
@@ -91,7 +101,7 @@ const Banner = () => {
                         setIsContactButtonHovered(false)
                      }
                   />
-               </motion.div>
+               </motion.a>
             </div>
 
             {/* Social buttons */}
