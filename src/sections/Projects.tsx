@@ -26,7 +26,7 @@ const Projects = () => {
          </div>
 
          <div className="flex items-center justify-center">
-            <DownArrow navTo="#" />
+            <DownArrow navTo="#contact" />
          </div>
       </div>
    );

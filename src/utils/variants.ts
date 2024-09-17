@@ -110,3 +110,27 @@ export const scaleVariants: Variants = {
       },
    },
 };
+
+export const leftToRightVariants: Variants = {
+   hidden: {
+      x: -80,
+      opacity: 0,
+   },
+   show: {
+      x: 0,
+      opacity: 1,
+
+      transition: {
+         type: "spring",
+         duration: 1,
+      },
+   },
+};
+
+export const appearsVariants: Variants = {
+   hidden: {
+      opacity: 0,
+   },
+
+   show: { opacity: 1, transition: { duration: 1.2 } },
+};
