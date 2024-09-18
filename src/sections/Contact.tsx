@@ -1,4 +1,5 @@
-import mailImage from "../assets/mail.svg";
+// import mailImage from "../assets/mail.svg";
+import pugImage from "../assets/pug.png";
 import { motion } from "framer-motion";
 import { appearsVariants, leftToRightVariants } from "../utils/variants";
 const Contact = () => {
@@ -64,10 +65,11 @@ const Contact = () => {
             {/* Imagen */}
             <div className="flex items-center justify-center">
                <motion.img
+                  className="h-[700px]"
                   variants={appearsVariants}
                   initial={"hidden"}
                   whileInView={"show"}
-                  src={mailImage}
+                  src={pugImage}
                   alt="mail.svg"
                />
             </div>
