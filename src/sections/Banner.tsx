@@ -19,7 +19,7 @@ const Banner = () => {
       useState<boolean>(false);
 
    return (
-      <div className="min-h-[100vh] relative">
+      <div className="min-h-[100vh] relative px-[20px]">
          <div
             className={`absolute inset-0 bg-cover bg-center opacity-[0.2]`}
             style={{ backgroundImage: `url(${backgroundImage})` }}
@@ -41,7 +41,10 @@ const Banner = () => {
             ></div>
 
             {/* NOMBRE */}
-            <p className="text-white font-K2D text-[64px]">
+            <p
+               className="text-white font-K2D text-[64px] 
+            max-md:text-[50px] max-[530px]:text-[40px] max-[432px]:text-[30px]"
+            >
                ¡Hola!, soy David{" "}
                <span className="text-baseGreen font-Roboto hover:">Avila</span>
             </p>
@@ -52,7 +55,8 @@ const Banner = () => {
                initial={"hidden"}
                whileInView={"show"}
                variants={textTypingStagger}
-               className="text-softGray font-Roboto text-[30px] text-center"
+               className="text-softGray font-Roboto text-[30px] text-center
+               max-md:text-[20px]"
             >
                {Array.from(
                   "Desarrollador especializado en aplicaciones web y mobile"
@@ -72,23 +76,32 @@ const Banner = () => {
             </motion.p>
 
             {/* Buttons */}
-            <div className=" flex flex-row gap-[80px] mt-[20px]">
+            <div
+               className="flex flex-row items-center gap-[80px] mt-[20px]
+                 max-[430px]:gap-[20px]"
+            >
                <a
                   href="#projects"
                   className="py-[8px] px-[30px] bg-baseBlue
                   rounded-[10px] cursor-pointer
-                  hover:shadow-whiteShadow transition-all inline-block"
+                  hover:shadow-whiteShadow transition-all inline-block
+                  "
                >
-                  <p className="text-white text-[22px]">Proyectos</p>
+                  <p className="text-white text-[22px] max-[430px]:text-[18px]">
+                     Proyectos
+                  </p>
                </a>
 
                <motion.a
                   href="#contact"
                   onMouseEnter={() => setIsContactButtonHovered(true)}
-                  className="py-[8px] px-[30px] rounded-[10px] cursor-pointer 
-                        flex flex-row gap-[12px] items-center justify-center"
+                  className="py-[8px] px-[18px] rounded-[10px] cursor-pointer 
+                        flex flex-row gap-[12px] items-center justify-center
+                        "
                >
-                  <p className="text-white text-[22px]">Contacto</p>
+                  <p className="text-white text-[22px] max-[430px]:text-[18px]">
+                     Contacto
+                  </p>
                   <motion.img
                      key={isContactButtonHovered ? "hovered" : "not-hovered"} //
                      src={sendIcon}
