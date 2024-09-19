@@ -28,7 +28,7 @@ export const projectConstants: Array<Iproject> = [
       description:
          "Reproductor de música para dispositivos android / ios , desarrollado en flutter.",
       screenShots: [palmPlayerScreenshot1],
-      color1: "#1b876d",
+      color1: "#0e6046",
       color2: "#36a1b2",
    },
 ];

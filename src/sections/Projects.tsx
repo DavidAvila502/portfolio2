@@ -31,8 +31,8 @@ const Projects = () => {
                modules={[Pagination]}
                className="h-[100%] w-[80%] py-[5px]"
             >
-               {projectConstants.map((item) => (
-                  <SwiperSlide>
+               {projectConstants.map((item, index) => (
+                  <SwiperSlide key={index}>
                      <ProjectCard
                         title={item.title}
                         icon={item.icon}
