@@ -134,3 +134,37 @@ export const appearsVariants: Variants = {
 
    show: { opacity: 1, transition: { duration: 1.2 } },
 };
+
+export const projectCardStaggerVariant: Variants = {
+   initial: {
+      translateY: 0,
+   },
+
+   start: {
+      translateY: -5,
+      transition: {
+         staggerChildren: 0.3,
+         delayChildren: 0.1,
+      },
+   },
+};
+
+export const eyeButtonVariant: Variants = {
+   initial: {
+      scale: 0,
+   },
+   start: {
+      scale: 1,
+      transition: {
+         type: "spring",
+         duration: 0.2,
+      },
+   },
+   hover: {
+      scale: 1.1,
+      transition: {
+         type: "spring",
+         duration: 0.2,
+      },
+   },
+};
