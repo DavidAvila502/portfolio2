@@ -2,7 +2,7 @@ import { navbaConstats } from "../../config/constants/navbar_constants";
 
 const Navbar = () => {
    return (
-      <nav className="p-5 border-strokeGray border-b-[0.1px]">
+      <nav className="p-5 border-strokeGray border-b-[0.1px] max-sm:hidden">
          <ul className="flex flex-row gap-5 ml-[5%]">
             {navbaConstats.map((element, index) => (
                <li key={index}>
