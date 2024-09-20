@@ -40,7 +40,10 @@ const TechnologList = ({
             {/* ICON */}
             <motion.div variants={technologyIconVariant}>
                <img
-                  className="h-[120px]"
+                  className="h-[120px] w-[120px]
+                  max-sm:h-[80px] 
+                  max-sm:w-[80px]
+                  "
                   src={item.icon}
                   alt={`technology${index + 1}.svg`}
                />
@@ -49,7 +52,9 @@ const TechnologList = ({
             {/* TECHNOLOGY NAME */}
             <motion.div
                variants={technologyTitleVariant}
-               className="text-white text-[40px] mt-[20px]"
+               className="text-white text-[40px] mt-[20px]
+               max-sm:text-[20px]
+               "
             >
                <p
                   className={`transition-all duration-300 ${
@@ -76,7 +81,9 @@ const TechnologList = ({
                   variants={verticalUpAppears}
                   initial={"hide"}
                   whileInView={"show"}
-                  className="absolute top-[-80px] bg-baseBlue p-[10px] w-[300px] rounded-[20px]"
+                  className="absolute top-[-80px] bg-baseBlue p-[10px] w-[300px] rounded-[20px]
+                  max-sm:w-[200px]
+                  "
                >
                   <p className="text-white text-[20px] font-K2D text-center">
                      {" "}

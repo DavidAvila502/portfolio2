@@ -19,8 +19,9 @@ const ProjectCard = ({
          variants={projectCardStaggerVariant}
          initial={"initial"}
          whileHover={"start"}
-         className="h-[100%] w-[480px] rounded-[20px] hover:cursor-pointer p-[20px]
+         className="h-full w-full rounded-[20px] hover:cursor-pointer p-[20px]
          transition-[brightnes] duration-[400ms] hover:brightness-[1.03]
+      
          "
          style={{
             background: `linear-gradient(to bottom, ${color1}, ${color2})`,

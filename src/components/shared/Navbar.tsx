@@ -8,11 +8,11 @@ const Navbar = () => {
                <li key={index}>
                   {" "}
                   <a
-                     href="#"
+                     href={element.id}
                      className="text-white font-Roboto hover:text-gray-400 hover:scale-[0.95] transition-all inline-block"
                   >
                      {" "}
-                     {element}
+                     {element.text}
                   </a>
                </li>
             ))}

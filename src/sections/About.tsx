@@ -67,7 +67,10 @@ const About = () => {
                initial={"hidden"}
                whileInView={"show"}
                variants={textTypingStagger}
-               className="text-white text-[45px] text-center font-Roboto max-w-[70%]"
+               className="text-white text-[45px] text-center font-Roboto max-w-[70%]
+               max-[880px]:max-w-[90%] max-[880px]:text-[35px] max-sm:text-[28px]
+               max-[430px]:text-[22px]
+               "
             >
                {phrases[selecedSection].split("").map((i, index) => (
                   <motion.span
@@ -76,7 +79,7 @@ const About = () => {
                      className={`font-K2D ${
                         index == 0 ||
                         index == phrases[selecedSection].length - 1
-                           ? "text-baseBlue text-[80px]"
+                           ? "text-baseBlue text-[80px] max-[880px]:text-[45px]"
                            : ""
                      }`}
                   >

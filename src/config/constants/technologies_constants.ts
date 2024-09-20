@@ -38,7 +38,7 @@ export const TechnologiesConstants: Array<ITechnology> = [
    },
    {
       title: "Flutter",
-      description: "Framework para desarrollar aplicaciones moviles",
+      description: "Framework para desarrollar aplicaciones móviles",
       icon: flutterIcon,
       type: technologyType.main,
    },

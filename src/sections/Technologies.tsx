@@ -11,7 +11,7 @@ import DownArrow from "../components/shared/DownArrow";
 
 const Technologies = () => {
    const [currentTechnologyType, setCurrentTechnologyType] =
-      useState<technologyType>(technologyType.main);
+      useState<technologyType>(technologyType.secondary);
 
    return (
       <div id="technologies" className="min-h-[100vh] bg-[#24272E] pt-[20px]">
@@ -35,7 +35,10 @@ const Technologies = () => {
             whileInView={"show"}
             key={currentTechnologyType}
             className="flex flex-row gap-[100px] flex-wrap justify-center items-center 
-             w-[60%] mx-auto pt-[100px] overflow-y-auto overflow-x-hidden h-[70vh] p-[50px] max-sm:w-[90%]"
+            w-[60%] mx-auto pt-[100px] overflow-y-auto overflow-x-hidden h-[70vh] p-[50px]
+            max-sm:w-[100%]
+            max-sm:gap-[50px]
+             "
          >
             <TechnologList
                technologies={TechnologiesConstants}

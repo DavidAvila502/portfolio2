@@ -7,7 +7,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 // import required modules
-import { Pagination } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
 import ProjectCard from "../components/projects/ProjectCard";
 import { projectConstants } from "../config/constants/projects_constants";
 
@@ -21,18 +21,35 @@ const Projects = () => {
 
          {/* Card project container */}
 
-         <div className="h-[70vh] mx-auto mt-[20px]">
+         <div className="min-h-[70vh] max-w-[1900px] mt-[20px] mx-auto my-0 flex items-center justify-center">
             <Swiper
-               slidesPerView={3}
-               spaceBetween={40}
+               slidesPerView={"auto"}
+               spaceBetween={10}
                pagination={{
                   clickable: true,
                }}
-               modules={[Pagination]}
-               className="h-[100%] w-[80%] py-[5px]"
+               breakpoints={{
+                  640: {
+                     spaceBetween: 40,
+                  },
+               }}
+               autoplay={{
+                  delay: 3000, // Cambia la página cada 3 segundos (3000 ms)
+                  disableOnInteraction: false, // Sigue el autoplay incluso después de que el usuario interactúe
+               }}
+               // loop={true}
+               modules={[Pagination, Autoplay]}
+               className="h-[600px] w-[80%] py-[5px]
+               max-[600px]:w-[95%]
+               "
             >
                {projectConstants.map((item, index) => (
-                  <SwiperSlide key={index}>
+                  <SwiperSlide
+                     key={index}
+                     className="w-[480px]
+                     max-[510px]:w-[380px] max-[460px]:w-[360px] max-[400px]:w-[320px]
+                     "
+                  >
                      <ProjectCard
                         title={item.title}
                         icon={item.icon}
