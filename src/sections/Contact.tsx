@@ -34,9 +34,10 @@ const Contact = () => {
                >
                   <input type="hidden" name="form-name" value="contact" />
 
-                  <p hidden>
+                  <p className="hidden">
                      <label>
-                        No llenar este campo: <input name="bot-field" />
+                        Don’t fill this out if you’re human:{" "}
+                        <input name="bot-field" />
                      </label>
                   </p>
 
@@ -46,6 +47,7 @@ const Contact = () => {
 
                   <input
                      type="text"
+                     name="name"
                      placeholder="Nombre:"
                      className="w-[70%] rounded-[20px] text-[20px] p-[20px]
                      border-[2px] border-gray-300 focus:border-baseBlue outline-none
@@ -57,6 +59,7 @@ const Contact = () => {
                   />
                   <input
                      type="email"
+                     name="email"
                      placeholder="Correo:"
                      className="w-[70%] rounded-[20px] text-[20px] p-[20px] mb-[20px]
                      border-[2px] border-gray-300 focus:border-baseBlue outline-none
@@ -69,6 +72,7 @@ const Contact = () => {
 
                   <textarea
                      placeholder="Mensaje:"
+                     name="message"
                      className="w-[70%] rounded-[20px] text-[20px] p-[20px]
                      border-[2px] border-gray-300 focus:border-baseBlue outline-none
                      max-lg:w-[80%]
