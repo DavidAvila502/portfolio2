@@ -43,7 +43,7 @@ const Banner = () => {
             {/* NOMBRE */}
             <p
                className="text-white font-K2D text-[64px] 
-            max-md:text-[50px] max-[530px]:text-[40px] max-[432px]:text-[30px]"
+               max-md:text-[50px] max-[530px]:text-[40px] max-[432px]:text-[30px]"
             >
                ¡Hola!, soy David{" "}
                <span className="text-baseGreen font-Roboto hover:">Avila</span>
