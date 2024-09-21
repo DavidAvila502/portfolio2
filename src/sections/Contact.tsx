@@ -13,7 +13,7 @@ const Contact = () => {
          <p className="text-white text-center font-K2D text-[40px]">Contacto</p>
 
          <div
-            className="mt-[20px] grid grid-cols-2 min-h-[70vh]
+            className="mt-[20px] grid grid-cols-2 min-h-[70vh] max-w-[1900px] mx-auto my-0
                max-md:grid-cols-1"
          >
             {/* Formulario */}
