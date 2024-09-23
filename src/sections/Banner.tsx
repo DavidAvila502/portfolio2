@@ -36,6 +36,8 @@ const Banner = () => {
             <div
                className="rounded-full w-[150px] h-[150px] bg-green-300 bg-cover bg-center
                border-[2px] border-white
+               2xl:w-[200px]
+               2xl:h-[200px]
                "
                style={{ backgroundImage: `url(${all_is_fine_image})` }}
             ></div>
@@ -43,7 +45,7 @@ const Banner = () => {
             {/* NOMBRE */}
             <p
                className="text-white font-K2D text-[64px] 
-               max-md:text-[50px] max-[530px]:text-[40px] max-[432px]:text-[30px]"
+              2xl:text-[90px] max-md:text-[50px] max-[530px]:text-[40px] max-[432px]:text-[30px]"
             >
                ¡Hola!, soy David{" "}
                <span className="text-baseGreen font-Roboto hover:">Avila</span>
@@ -56,7 +58,7 @@ const Banner = () => {
                whileInView={"show"}
                variants={textTypingStagger}
                className="text-softGray font-Roboto text-[30px] text-center
-               max-md:text-[20px]"
+              2xl:text-[40px] max-md:text-[20px]"
             >
                {Array.from(
                   "Desarrollador especializado en aplicaciones web y mobile"

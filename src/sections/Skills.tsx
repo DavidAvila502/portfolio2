@@ -16,7 +16,7 @@ const Skills = () => {
             initial={"hide"}
             whileInView={"show"}
             className="mt-[40px] flex flex-row flex-wrap items-center justify-center gap-[50px] min-h-[60vh]
-            max-w-[1900px] mx-auto my-0 px-[20px] 
+            max-w-[1900px] mx-auto my-0 px-[20px]
             "
          >
             {skillsConstats.map((currentSkill, index) => (
@@ -24,10 +24,12 @@ const Skills = () => {
                   variants={StaggerVerticalUpAppears}
                   key={index}
                   className="rounded-[20px] bg-baseGrayWithOpacity border-strokeGray border-[1px]
-                  flex flex-col items-start justify-center w-[500px] h-[300px] pl-[40px] py-[50px] px-[5px]
+                  flex flex-col items-start justify-center w-[500px] h-[300px] pl-[40px] py-[50px] pr-[5px]
                   gap-[20px] hover:shadow-blueShadow transition-all duration-[400ms] cursor-pointer
 
-                  max-[460px]:h-[200px]
+                  2xl:w-[560px] max-[460px]:h-[200px]
+                  2xl:h-[350px]
+                  2xl:pr-[20px]
                   max-[460px]:gap-[10px]
                   "
                >
@@ -48,6 +50,7 @@ const Skills = () => {
                   <p
                      className="font-K2D text-white text-[25px]
                      max-[460px]:text-[20px]
+                     2xl:text-[35px]
                      "
                   >
                      {currentSkill.title}
@@ -56,6 +59,7 @@ const Skills = () => {
                   <p
                      className="text-[#A1A1A1] text-[22px] font-K2D
                   max-[460px]:text-[18px]
+                  2xl:text-[25px]
                   "
                   >
                      {currentSkill.description}

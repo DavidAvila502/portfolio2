@@ -68,7 +68,7 @@ const About = () => {
                whileInView={"show"}
                variants={textTypingStagger}
                className="text-white text-[45px] text-center font-Roboto max-w-[70%]
-               max-[880px]:max-w-[90%] max-[880px]:text-[35px] max-sm:text-[28px]
+               2xl:text-[55px] max-[880px]:max-w-[90%] max-[880px]:text-[35px] max-sm:text-[28px]
                max-[430px]:text-[22px]
                "
             >
