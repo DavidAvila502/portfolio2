@@ -5,7 +5,6 @@ import whatsappIcon from "../assets/whatsapp.svg";
 import gmailIcon from "../assets/gmail.svg";
 import { motion } from "framer-motion";
 import { useState } from "react";
-import backgroundImage from "../assets/background2.jpg";
 import {
    textTypingStagger,
    typing,
@@ -20,11 +19,6 @@ const Banner = () => {
 
    return (
       <div className="min-h-[100vh] relative px-[20px]">
-         <div
-            className={`absolute inset-0 bg-cover bg-center opacity-[0.2]`}
-            style={{ backgroundImage: `url(${backgroundImage})` }}
-         ></div>
-
          <motion.div
             id="Banner"
             initial={"hide"}

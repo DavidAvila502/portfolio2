@@ -5,7 +5,7 @@ import { StaggerChild, StaggerVerticalUpAppears } from "../utils/variants";
 
 const Skills = () => {
    return (
-      <div id="skills" className="min-h-[100vh] pt-[40px]">
+      <div id="skills" className="min-h-[100vh] pt-[40px] bg-backgroundColor">
          {/* Title */}
          <p className="text-white text-[40px] font-K2D text-center mt-[20px]">
             Habilidades

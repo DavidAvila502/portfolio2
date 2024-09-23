@@ -13,7 +13,10 @@ import { projectConstants } from "../config/constants/projects_constants";
 
 const Projects = () => {
    return (
-      <div id="projects" className=" pt-[20px] min-h-[100vh]">
+      <div
+         id="projects"
+         className=" pt-[20px] min-h-[100vh] bg-backgroundColor"
+      >
          {/* Title */}
          <p className="font-K2D mt-[20px] text-center text-[40px] text-white">
             Proyectos
