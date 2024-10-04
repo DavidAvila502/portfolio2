@@ -25,3 +25,26 @@ export const getTechnologyByType = (
          return technologiesConstants;
    }
 };
+
+export const getTechnologiesByName = (
+   technologiesConstants: Array<ITechnology>,
+   technologyNames: Array<string>
+) => {
+   let technologiesFound: Array<ITechnology> = [];
+
+   technologyNames.forEach((currentTechnologyName) => {
+      const technologyFound = technologiesConstants.find(
+         (currentTechnology) =>
+            currentTechnologyName.toLocaleLowerCase() ==
+            currentTechnology.title.toLowerCase()
+      );
+
+      technologiesFound != undefined
+         ? technologiesFound.push(technologyFound!)
+         : "";
+   });
+
+   console.log(technologiesFound);
+
+   return technologiesFound;
+};

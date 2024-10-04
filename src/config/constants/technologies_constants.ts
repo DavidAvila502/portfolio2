@@ -90,7 +90,7 @@ export const TechnologiesConstants: Array<ITechnology> = [
       type: technologyType.secondary,
    },
    {
-      title: "Srapi",
+      title: "Strapi",
       description: "CMS back-end para node js",
       icon: strapiIcon,
       type: technologyType.secondary,

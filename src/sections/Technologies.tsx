@@ -34,14 +34,15 @@ const Technologies = () => {
             initial={"hidden"}
             whileInView={"show"}
             key={currentTechnologyType}
-            className="flex flex-row gap-[100px] flex-wrap justify-center items-center 
-            w-[60%] mx-auto pt-[100px] overflow-y-auto overflow-x-hidden h-[70vh] p-[50px]
+            className="flex mt-[60px] flex-row gap-[100px] flex-wrap justify-center items-center 
+            w-[60%] mx-auto min-h-[70vh]
             max-sm:w-[100%]
-            max-sm:gap-[50px]
+            max-sm:gap-[30px]
              "
          >
             <TechnologList
                technologies={TechnologiesConstants}
+               filterByType={true}
                currentTechnologyType={currentTechnologyType}
             />
          </motion.div>
