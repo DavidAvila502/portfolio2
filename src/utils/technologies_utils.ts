@@ -44,7 +44,5 @@ export const getTechnologiesByName = (
          : "";
    });
 
-   console.log(technologiesFound);
-
    return technologiesFound;
 };

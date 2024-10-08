@@ -6,14 +6,14 @@ import {
 import { Iproject } from "../../config/constants/projects_constants";
 import eyeIcon from "../../assets/eye.svg";
 
-const ProjectCard = ({
-   title,
-   description,
-   icon,
-   screenShots,
-   color1,
-   color2,
-}: Iproject) => {
+interface ProjectCardProps {
+   project: Iproject;
+   activateModal?: () => void;
+}
+
+const ProjectCard = ({ project, activateModal }: ProjectCardProps) => {
+   const { title, description, icon, screenShots, color1, color2 } = project;
+
    return (
       <motion.div
          variants={projectCardStaggerVariant}
@@ -57,6 +57,9 @@ const ProjectCard = ({
 
          <div className="mt-[60px] flex flex-col items-end justify-end">
             <motion.div
+               onClick={() =>
+                  activateModal != undefined ? activateModal() : ""
+               }
                variants={eyeButtonVariant}
                className="p-[10px] bg-gray-400 rounded-full hover:bg-black
                "

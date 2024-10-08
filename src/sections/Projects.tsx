@@ -11,7 +11,11 @@ import { Pagination, Autoplay } from "swiper/modules";
 import ProjectCard from "../components/projects/ProjectCard";
 import { projectConstants } from "../config/constants/projects_constants";
 
-const Projects = () => {
+interface ProjectsProps {
+   activateModal?: () => void;
+}
+
+const Projects = ({ activateModal }: ProjectsProps) => {
    return (
       <div
          id="projects"
@@ -54,12 +58,8 @@ const Projects = () => {
                      "
                   >
                      <ProjectCard
-                        title={item.title}
-                        icon={item.icon}
-                        screenShots={item.screenShots}
-                        description={item.description}
-                        color1={item.color1}
-                        color2={item.color2}
+                        project={item}
+                        activateModal={activateModal}
                      />
                   </SwiperSlide>
                ))}

@@ -29,7 +29,7 @@ const App = () => {
             <About />
             <Skills />
             <Technologies />
-            <Projects />
+            <Projects activateModal={() => setIsModalActive(true)} />
             <Contact />
          </div>
       </div>
