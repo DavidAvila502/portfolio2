@@ -11,6 +11,12 @@ export interface Iproject {
    title: string;
    description: string;
    screenShots: Array<string>;
+   technologyList?: Array<string>;
+   stateManagment?: string;
+   features?: Array<string>;
+   siteUrl?: string;
+   repositoryUrl?: string;
+   architecture?: string;
    color1: string;
    color2: string;
 }
@@ -27,6 +33,19 @@ export const projectConstants: Array<Iproject> = [
          villamarScreenshot3,
          villamarScreenshot4,
       ],
+      technologyList: ["React", "Strapi", "Typescript", "Javascript"],
+      stateManagment: "React context + redux toolkit",
+      architecture: "Personalizada",
+      features: [
+         "Login",
+         "Consumo de API-Rest",
+         "Registro de usuario",
+         "Modificación de los datos del usuario",
+         "Restablecer contraseña",
+         "Acceso a promociones",
+         "Generacíon de tarjeta digital",
+         "Gestion de contenido en la plataforma mediante strapi",
+      ],
       color1: "#194FE8",
       color2: "#5219E8",
    },
@@ -39,25 +58,4 @@ export const projectConstants: Array<Iproject> = [
       color1: "#0e6046",
       color2: "#36a1b2",
    },
-
-   // ******************
-
-   // {
-   //    icon: villamarRewardsIcon,
-   //    title: "Villamar Rewards",
-   //    description:
-   //       "Proyecto full-stack , sistema de fidelizacion de huespedes para el hotel Villamar Princesa.",
-   //    screenShots: [villamarScreenshot1],
-   //    color1: "#194FE8",
-   //    color2: "#5219E8",
-   // },
-   // {
-   //    icon: PalmPlayerIcon,
-   //    title: "Palm Player",
-   //    description:
-   //       "Reproductor de música para dispositivos android / ios , desarrollado en flutter.",
-   //    screenShots: [palmPlayerScreenshot1],
-   //    color1: "#0e6046",
-   //    color2: "#36a1b2",
-   // },
 ];

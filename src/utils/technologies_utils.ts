@@ -39,7 +39,7 @@ export const getTechnologiesByName = (
             currentTechnology.title.toLowerCase()
       );
 
-      technologiesFound != undefined
+      technologyFound != undefined
          ? technologiesFound.push(technologyFound!)
          : "";
    });

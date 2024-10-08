@@ -8,15 +8,17 @@ import Technologies from "./sections/Technologies";
 import backgroundImage from "./assets/background2.jpg";
 import { useState } from "react";
 import ProjectsModal from "./components/projects/ProjectsModal";
+import { Iproject } from "./config/constants/projects_constants";
 
 const App = () => {
    const [isModalActive, setIsModalActive] = useState<boolean>(false);
-
+   const [projectModalContent, setProjectModalContent] = useState<Iproject>();
    return (
       <div>
          <ProjectsModal
             isModalActive={isModalActive}
             setIsModdalActive={setIsModalActive}
+            project={projectModalContent}
          />
          <div className="relative">
             <Navbar />
@@ -29,7 +31,10 @@ const App = () => {
             <About />
             <Skills />
             <Technologies />
-            <Projects activateModal={() => setIsModalActive(true)} />
+            <Projects
+               activateModal={() => setIsModalActive(true)}
+               setModalContent={setProjectModalContent}
+            />
             <Contact />
          </div>
       </div>
