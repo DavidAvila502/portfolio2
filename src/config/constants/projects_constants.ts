@@ -1,3 +1,4 @@
+import villamarRewardsMainScreensht from "../../assets/villamar_rewards_full_screenshot.jpeg";
 import villamarRewardsIcon from "../../assets/villamar-rewards-logo.svg";
 import villamarScreenshot1 from "../../assets/villamar_rewards_1.jpeg";
 import villamarScreenshot2 from "../../assets/villamar_rewards_2.jpeg";
@@ -10,6 +11,7 @@ export interface Iproject {
    icon: string;
    title: string;
    description: string;
+   mainScreenshot?: string;
    screenShots: Array<string>;
    technologyList?: Array<string>;
    stateManagment?: string;
@@ -27,6 +29,7 @@ export const projectConstants: Array<Iproject> = [
       title: "Villamar Rewards",
       description:
          "Proyecto full-stack , sistema de fidelizacion de huespedes para el hotel Villamar Princesa.",
+      mainScreenshot: villamarRewardsMainScreensht,
       screenShots: [
          villamarScreenshot1,
          villamarScreenshot2,
@@ -46,6 +49,7 @@ export const projectConstants: Array<Iproject> = [
          "Generacíon de tarjeta digital",
          "Gestion de contenido en la plataforma mediante strapi",
       ],
+      siteUrl: "https://sistemafidelizacion-production.up.railway.app/",
       color1: "#194FE8",
       color2: "#5219E8",
    },
@@ -54,6 +58,7 @@ export const projectConstants: Array<Iproject> = [
       title: "Palm Player",
       description:
          "Reproductor de música para dispositivos android / ios , desarrollado en flutter.",
+      mainScreenshot: palmPlayerScreenshot1,
       screenShots: [palmPlayerScreenshot1],
       color1: "#0e6046",
       color2: "#36a1b2",

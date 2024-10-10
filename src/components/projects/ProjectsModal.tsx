@@ -10,6 +10,7 @@ import worldIcon from "../../assets/world_icon.svg";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper/modules";
+import LinkButton from "../shared/LinkButton";
 
 interface ProjectsModalProps {
    isModalActive: boolean;
@@ -182,44 +183,19 @@ const ProjectsModal = ({
                   {/* Buttons */}
 
                   <div className="flex flex-row gap-[30px] pb-[40px]">
-                     <div
-                        className="rounded-[20px] bg-baseBlue px-[20px] py-[10px]
-                           flex flex-row items-center gap-2 cursor-pointer"
-                     >
-                        <img src={worldIcon} alt="world.svg" />
-                        <p className="text-white font-K2D text-[20px]">
-                           Ir al sitio
-                        </p>
-                     </div>
+                     <LinkButton
+                        text="Ir al sitio"
+                        active={true}
+                        icon={worldIcon}
+                        url={project.siteUrl}
+                     />
 
-                     <div
-                        className="relative flex flex-row  rounded-[20px] bg-gray-400 px-[20px] py-[10px]
-                           items-center gap-2 cursor-pointer
-                           group"
-                     >
-                        <img src={lockIcon} alt="lock.svg" />
-                        <p className="text-white font-K2D text-[20px]">
-                           Repositorio
-                        </p>
-
-                        {/* Cuadro de información (oculto por defecto) */}
-                        <div
-                           className="absolute left-0 top-[-80px] p-4 w-[200px] rounded-[20px]
-                              bg-yellow-600  opacity-0
-                              group-hover:opacity-100 transition-opacity duration-300
-                              flex items-center justify-center"
-                        >
-                           <p className="font-K2D text-white text-[18px]">
-                              El código es privado
-                           </p>
-
-                           <div
-                              className="absolute bottom-[-10px] left-1/2 transform 
-                              -translate-x-1/2 w-0 h-0 border-l-8 border-r-8 border-t-8
-                              border-transparent border-t-yellow-600"
-                           ></div>
-                        </div>
-                     </div>
+                     <LinkButton
+                        active={false}
+                        text="Repositorio"
+                        infoText="El código de este proyecto es privado"
+                        icon={lockIcon}
+                     />
                   </div>
                </div>
             )}

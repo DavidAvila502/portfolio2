@@ -17,7 +17,7 @@ const ProjectCard = ({
    activateModal,
    setModalContent,
 }: ProjectCardProps) => {
-   const { title, description, icon, screenShots, color1, color2 } = project;
+   const { title, description, icon, color1, color2, mainScreenshot } = project;
 
    return (
       <motion.div
@@ -55,7 +55,7 @@ const ProjectCard = ({
          {/* Screenshoot */}
 
          <img
-            src={screenShots[0]}
+            src={mainScreenshot}
             alt="screenshot.png"
             className="max-h-[200px] mx-auto mt-[50px] rounded-[20px]"
          />
