@@ -168,3 +168,28 @@ export const eyeButtonVariant: Variants = {
       },
    },
 };
+
+export const modalVariants: Variants = {
+   initial: {
+      x: -400,
+      opacity: 0,
+   },
+
+   show: {
+      x: 0,
+      opacity: 1,
+      transition: {
+         type: "sping",
+         duration: 0.5,
+      },
+   },
+
+   hide: {
+      x: -400,
+      opacity: 0,
+      transition: {
+         type: "spring",
+         duration: 0.8,
+      },
+   },
+};

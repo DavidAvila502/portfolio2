@@ -5,7 +5,12 @@ import villamarScreenshot2 from "../../assets/villamar_rewards_2.jpeg";
 import villamarScreenshot3 from "../../assets/villamar_rewards_3.jpeg";
 import villamarScreenshot4 from "../../assets/villamar_rewards_4.jpeg";
 import PalmPlayerIcon from "../../assets/palm_player_dark_logo.png";
-import palmPlayerScreenshot1 from "../../assets/palm_player_1.png";
+import palmPlayerMainScreenshoot from "../../assets/palm_player_full_screenshot.png";
+import palmPlayerScreenshot1 from "../../assets/palm_player_1.jpeg";
+import palmPlayerScreenshot2 from "../../assets/palm_player_2.jpeg";
+import palmPlayerScreenshot3 from "../../assets/palm_player_3.jpeg";
+import palmPlayerScreenshot4 from "../../assets/palm_player_4.jpeg";
+import palmPlayerScreenshot5 from "../../assets/palm_player_5.jpeg";
 
 export interface Iproject {
    icon: string;
@@ -58,8 +63,27 @@ export const projectConstants: Array<Iproject> = [
       title: "Palm Player",
       description:
          "Reproductor de música para dispositivos android / ios , desarrollado en flutter.",
-      mainScreenshot: palmPlayerScreenshot1,
-      screenShots: [palmPlayerScreenshot1],
+      mainScreenshot: palmPlayerMainScreenshoot,
+      screenShots: [
+         palmPlayerScreenshot1,
+         palmPlayerScreenshot2,
+         palmPlayerScreenshot3,
+         palmPlayerScreenshot4,
+         palmPlayerScreenshot5,
+      ],
+      repositoryUrl: "https://github.com/DavidAvila502/palm_player",
+      technologyList: ["flutter"],
+      stateManagment: "Bloc",
+      architecture: "Clean architecture + Bloc pattern",
+      features: [
+         "Reproducción de audio en segundo plano",
+         "Listado de canciones",
+         "Búsqueda de canciones",
+         "Controles principales de reproducción",
+         "Uso de los metadatos en archivos de audio",
+         "Listado de álbumes",
+         "Reproducción del álbum",
+      ],
       color1: "#0e6046",
       color2: "#36a1b2",
    },

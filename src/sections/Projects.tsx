@@ -45,8 +45,8 @@ const Projects = ({ activateModal, setModalContent }: ProjectsProps) => {
                   },
                }}
                autoplay={{
-                  delay: 3000, // Cambia la página cada 3 segundos (3000 ms)
-                  disableOnInteraction: false, // Sigue el autoplay incluso después de que el usuario interactúe
+                  delay: 3000,
+                  disableOnInteraction: false,
                }}
                // loop={true}
                modules={[Pagination, Autoplay]}

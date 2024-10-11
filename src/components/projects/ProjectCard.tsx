@@ -60,7 +60,10 @@ const ProjectCard = ({
             className="max-h-[200px] mx-auto mt-[50px] rounded-[20px]"
          />
 
-         <div className="mt-[60px] flex flex-col items-end justify-end">
+         <div
+            className={`mt-[60px] flex flex-col items-end justify-end max-sm:hidden`}
+         >
+            {/* Desktop info button */}
             <motion.div
                onClick={() => {
                   if (
@@ -77,6 +80,23 @@ const ProjectCard = ({
             >
                <img src={eyeIcon} alt="show" className="h-[30px] w-[30px]" />
             </motion.div>
+         </div>
+
+         {/* Mobile info button */}
+
+         <div
+            onClick={() => {
+               if (activateModal != undefined && setModalContent != undefined) {
+                  setModalContent(project);
+                  activateModal();
+               }
+            }}
+            className="sm:hidden mt-[30px] bg-gray-800 py-[11px] rounded-[20px]
+               "
+         >
+            <p className="text-center text-white font-K2D text-[20px]">
+               Más información
+            </p>
          </div>
       </motion.div>
    );

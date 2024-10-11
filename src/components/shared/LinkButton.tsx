@@ -7,6 +7,7 @@ interface LinkButtonProps {
    icon?: string;
    iconStyles?: string;
    infoText?: string;
+   buttonStyles?: string;
 }
 
 const LinkButton = ({
@@ -18,17 +19,19 @@ const LinkButton = ({
    active,
    url,
    infoText,
+   buttonStyles,
 }: LinkButtonProps) => {
    return (
       <a
          target={`${url ? "_blank" : ""}`}
-         href={active && url != undefined ? url : "#"}
+         href={active == true && url != undefined ? url : undefined}
          className={`${
             active === true ? backgroundColor ?? "bg-baseBlue" : "bg-gray-400"
          }
          ${textStyle ?? "font-K2D text-[20px] text-white"}
-
          ${infoText != undefined ? "group" : ""}
+         ${buttonStyles ?? ""}
+
          relative cursor-pointer rounded-[20px] px-[20px] py-[10px]
          flex flex-row items-center justify-center gap-2`}
       >
@@ -42,10 +45,10 @@ const LinkButton = ({
 
          {/* info text */}
          <div
-            className="absolute left-[1/2] top-[-80px] p-2 w-[300px] rounded-[20px]
+            className="absolute hidden left-[1/2] top-[-80px] p-2 w-[300px] rounded-[20px]
                               bg-yellow-600  opacity-0
                               group-hover:opacity-100 transition-opacity duration-300
-                              flex items-center justify-center"
+                              group-hover:flex items-center justify-center z-[10]"
          >
             <p className="font-K2D text-white text-center text-[18px]">
                {infoText}

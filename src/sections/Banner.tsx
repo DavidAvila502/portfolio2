@@ -115,7 +115,11 @@ const Banner = () => {
 
             {/* Social buttons */}
             <div className="flex flex-row gap-[20px] mt-[40px]">
-               <SocialIcon icon={githubIcon} alt="github.svg" />
+               <SocialIcon
+                  icon={githubIcon}
+                  alt="github.svg"
+                  url="https://github.com/DavidAvila502"
+               />
                <SocialIcon icon={whatsappIcon} alt="whatsapp.svg" />
                <SocialIcon icon={gmailIcon} alt="gmail.svg" />
             </div>
