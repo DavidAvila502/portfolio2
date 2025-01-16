@@ -55,7 +55,7 @@ const Banner = () => {
               2xl:text-[40px] max-md:text-[20px]"
             >
                {Array.from(
-                  "Desarrollador especializado en aplicaciones web y mobile"
+                  "Desarrollador Full-Stack especializado"
                ).map((i, index) => (
                   <motion.span key={index} variants={typing}>
                      {i}
@@ -64,7 +64,7 @@ const Banner = () => {
 
                <br />
 
-               {Array.from("con React y Flutter").map((i, index) => (
+               {Array.from("en .Net y React").map((i, index) => (
                   <motion.span key={index} variants={typing}>
                      {i}
                   </motion.span>

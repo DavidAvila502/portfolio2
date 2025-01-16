@@ -1,4 +1,5 @@
 import reactIcon from "../../assets/react.svg";
+import dotNet from "../../assets/dotNet.png";
 import flutterIcon from "../../assets/flutter.svg";
 import expressIcon from "../../assets/express.svg";
 import javascriptIcon from "../../assets/javascript.svg";
@@ -9,6 +10,7 @@ import gitIcon from "../../assets/git.svg";
 import strapiIcon from "../../assets/strapi-logo.png";
 import pythonIcon from "../../assets/pytnon.svg";
 import flaskIcon from "../../assets/Flask.svg";
+import cSharp from "../../assets/cSharp.png";
 
 export enum technologyType {
    main,
@@ -28,6 +30,12 @@ export const TechnologiesConstants: Array<ITechnology> = [
       title: "React",
       description: "Biblioteca para crear interfaces web",
       icon: reactIcon,
+      type: technologyType.main,
+   },
+   {
+      title: ".Net",
+      description: "Ecosistema de desarrollo de microsoft",
+      icon: dotNet,
       type: technologyType.main,
    },
    {
@@ -52,6 +60,12 @@ export const TechnologiesConstants: Array<ITechnology> = [
       title: "Javascript",
       description: "Lenguaje de programación para la web",
       icon: javascriptIcon,
+      type: technologyType.secondary,
+   },
+   {
+      title: "C#",
+      description: "Lenguaje de programación de microsoft",
+      icon: cSharp,
       type: technologyType.secondary,
    },
 
