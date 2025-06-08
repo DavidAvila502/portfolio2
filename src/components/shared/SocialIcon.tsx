@@ -12,7 +12,7 @@ const SocialIcon = ({ icon, alt, url }: SocialIconProps) => {
          className="p-[10px] bg-[#1B1D21] border-strokeGray border-[1px] rounded-full cursor-pointer 
          hover:shadow-grenShadow transition-all inline-block"
       >
-         <img src={icon} alt={alt} />
+         <img src={icon} alt={alt} className="w-[35px] h-[35px]" />
       </a>
    ) : (
       <a

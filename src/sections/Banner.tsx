@@ -1,8 +1,9 @@
 import sendIcon from "../assets/send_icon.svg";
 import SocialIcon from "../components/shared/SocialIcon";
 import githubIcon from "../assets/github.svg";
-import whatsappIcon from "../assets/whatsapp.svg";
-import gmailIcon from "../assets/gmail.svg";
+// import whatsappIcon from "../assets/whatsapp.svg";
+// import gmailIcon from "../assets/gmail.svg";
+import linkedinIcon from "../assets/linkedin.svg"
 import { motion } from "framer-motion";
 import { useState } from "react";
 import {
@@ -120,8 +121,13 @@ const Banner = () => {
                   alt="github.svg"
                   url="https://github.com/DavidAvila502"
                />
-               <SocialIcon icon={whatsappIcon} alt="whatsapp.svg" />
-               <SocialIcon icon={gmailIcon} alt="gmail.svg" />
+               <SocialIcon
+                  icon={linkedinIcon}
+                  alt="linkeding.svg"
+                  url="https://www.linkedin.com/in/jos%C3%A9-david-%C3%A1vila-maldonado-8325422a7/"
+               />
+               {/* <SocialIcon icon={whatsappIcon} alt="whatsapp.svg" /> */}
+               {/* <SocialIcon icon={gmailIcon} alt="gmail.svg" /> */}
             </div>
 
             <DownArrow navTo="#about" />

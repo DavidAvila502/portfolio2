@@ -4,8 +4,9 @@ import { motion } from "framer-motion";
 import { appearsVariants, leftToRightVariants } from "../utils/variants";
 import SocialIcon from "../components/shared/SocialIcon";
 import githubIcon from "../assets/github.svg";
-import whatsappIcon from "../assets/whatsapp.svg";
-import gamiIcon from "../assets/gmail.svg";
+// import whatsappIcon from "../assets/whatsapp.svg";
+// import gamiIcon from "../assets/gmail.svg";
+import linkedinIcon from "../assets/linkedin.svg"
 
 const Contact = () => {
    return (
@@ -93,9 +94,18 @@ const Contact = () => {
                   />
 
                   <div className="mt-[10px] flex items-center justify-center gap-[15px]">
-                     <SocialIcon alt="github.svg" icon={githubIcon} />
-                     <SocialIcon alt="whatsapp.svg" icon={whatsappIcon} />
-                     <SocialIcon alt="gmail.svg" icon={gamiIcon} />
+                     <SocialIcon
+                        icon={githubIcon}
+                        alt="github.svg"
+                        url="https://github.com/DavidAvila502"
+                     />
+                     <SocialIcon
+                        icon={linkedinIcon}
+                        alt="linkeding.svg"
+                        url="https://www.linkedin.com/in/jos%C3%A9-david-%C3%A1vila-maldonado-8325422a7/"
+               />
+                     {/* <SocialIcon alt="whatsapp.svg" icon={whatsappIcon} /> */}
+                     {/* <SocialIcon alt="gmail.svg" icon={gamiIcon} /> */}
                   </div>
                </motion.form>
             </div>
