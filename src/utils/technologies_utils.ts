@@ -14,7 +14,8 @@ export const getTechnologyByType = (
          );
 
       case technologyType.secondary:
-         return technologiesConstants;
+         return technologiesConstants.filter(
+            (item)=> item.type == technologyType.main || item.type == technologyType.secondary);
 
       case technologyType.learn:
          return technologiesConstants.filter(

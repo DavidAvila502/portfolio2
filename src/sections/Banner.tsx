@@ -56,7 +56,7 @@ const Banner = () => {
               2xl:text-[40px] max-md:text-[20px]"
             >
                {Array.from(
-                  "Desarrollador Full-Stack especializado"
+                  "Desarrollador Full-Stack enfocado al backend"
                ).map((i, index) => (
                   <motion.span key={index} variants={typing}>
                      {i}
@@ -65,7 +65,7 @@ const Banner = () => {
 
                <br />
 
-               {Array.from("en .Net y React").map((i, index) => (
+               {Array.from("con Spring Boot y React").map((i, index) => (
                   <motion.span key={index} variants={typing}>
                      {i}
                   </motion.span>
